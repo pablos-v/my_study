@@ -1,3 +1,7 @@
+/**
+ * Так я бы реализовал Линкед Лист
+ * @param <T>
+ */
 public class MyLinkedList<T> {
     Node<T> first;
 

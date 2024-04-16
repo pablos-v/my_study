@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class BellTask5 implements Basket {
+public class BellTask5 implements Basket, Comparable<BellTask5> {
 
     private final Map<String, Integer> basket;
 
@@ -41,5 +41,15 @@ public class BellTask5 implements Basket {
     public int getProductQuantity(String product) {
         return basket.get(product);
     }
+
+    public Map<String, Integer> getBasket() {
+        return basket;
+    }
+
+    @Override
+    public int compareTo(BellTask5 o) {
+        return o.getBasket().values().stream().mapToInt(i->i).sum() - this.getBasket().values().stream().mapToInt(i->i).sum();
+    }
+
 
 }

@@ -1,11 +1,12 @@
 package bell_tasks;
 
+import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 
-import java.util.Map;
 import java.util.Objects;
-
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class BellTask5Test {
 
     BellTask5 b = new BellTask5();

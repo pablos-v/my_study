@@ -2,7 +2,7 @@ package bell_tasks;
 
 import java.util.List;
 
-public interface Basket {
+public interface Basket  {
     void addProduct(String product, int quantity);
 
     void removeProduct(String product);
@@ -15,4 +15,5 @@ public interface Basket {
 
     int getProductQuantity(String product);
 
+    int compareTo(BellTask5 o);
 }
