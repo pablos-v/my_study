@@ -1,3 +1,5 @@
+package test_tasks.idea_platform;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -22,7 +24,7 @@ import java.util.stream.Collectors;
  */
 public class TestTaskForIdeaPlatform {
 
-    public static final String FILE_PATH = "./tickets.json";
+    public static final String FILE_PATH = "./resources/tickets.json";
     public static final String ROOT_NODE = "tickets";
     public static final String ORIGIN = "VVO";
     public static final String DESTINATION = "TLV";
